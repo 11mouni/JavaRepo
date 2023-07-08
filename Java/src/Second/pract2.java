@@ -6,7 +6,7 @@ public class pract2 {
 	System.out.println("practicingg the git ");
 	System.out.println("new commit");
 	System.out.println("commit # 3");
-
+       System.out.println("print ");
 	}
 
 }
