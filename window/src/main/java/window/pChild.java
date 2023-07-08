@@ -15,16 +15,13 @@ public class pChild extends common {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		common.openurl("https://www.goibibo.com/bus/");
 		driver.manage().window().maximize();
-	
 		By holiday = By.xpath("//a[text()='Holidays']");
 		WebElement holiD = driver.findElement(holiday);
 		holiD.click();
 		String parentWindowHandl = driver.getWindowHandle(); //get the single browser window id
 		System.out.println("parentWindowHandl" + parentWindowHandl);
-
 		Set<String> windows = driver.getWindowHandles();   //get the multiple browser windows id  	
 		System.out.println(windows);
-
 		List<String> windowsidlist = new ArrayList(windows);
 		String ParentwinId = windowsidlist.get(0);
 		String ChildwindId = windowsidlist.get(1);
