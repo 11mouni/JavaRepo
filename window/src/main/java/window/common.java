@@ -1,10 +1,24 @@
 package window;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class common {
-public static void main(String[] args) {
-	System.out.println("window");
-	System.out.println("MavenProject");
-	
-	System.out.println("Windows project.." );
+
+	public static WebDriver driver ;
+	public static WebDriver launchBrowser()
+	{
+		return driver = new ChromeDriver();
+
+	}
+
+	public static void openurl(String u)
+	{
+
+		System.out.println(u);
+		driver.get(u);
+	}
+
+
 }
-}
+
