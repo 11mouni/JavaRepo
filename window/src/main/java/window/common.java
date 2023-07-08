@@ -4,5 +4,7 @@ public class common {
 public static void main(String[] args) {
 	System.out.println("window");
 	System.out.println("MavenProject");
+	
+	System.out.println("Windows project.." );
 }
 }
