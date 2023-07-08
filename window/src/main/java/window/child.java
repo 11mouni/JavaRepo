@@ -24,7 +24,6 @@ public class child extends common {
 
 		Set<String> windows = driver.getWindowHandles();   //get the multiple browser windows id  	
 		System.out.println(windows);
-
 		List<String> windowsidlist = new ArrayList(windows);
 		String ParentwinId = windowsidlist.get(0);
 		String ChildwindId = windowsidlist.get(1);
